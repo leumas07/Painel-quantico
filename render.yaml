@@ -3,7 +3,7 @@ services:
   - type: web
     name: painel-backend
     env: node
-    repo: <replace-with-your-github-repo>
+    repo: https://github.com/leumas07/painel-quantico
     branch: main
     plan: free
     buildCommand: cd server && npm install
@@ -12,7 +12,7 @@ services:
   - type: web
     name: painel-frontend
     env: node
-    repo: <replace-with-your-github-repo>
+    repo: https://github.com/leumas07/painel-quantico
     branch: main
     plan: free
     buildCommand: cd web && npm install && npm run build
