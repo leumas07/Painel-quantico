@@ -5,7 +5,7 @@ const { Server } = require('socket.io');
 const axios = require('axios');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const Market = require('./services/marketClient');
+const Market = require('./marketClient');
 
 const app = express();
 const server = http.createServer(app);
