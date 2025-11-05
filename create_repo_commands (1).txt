@@ -1,0 +1,11 @@
+
+# GitHub CLI (option) - run inside the project folder
+gh repo create painel-pessoal --public --source=. --push
+
+# OR traditional git
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/SEU_USUARIO/painel-pessoal.git
+git push -u origin main

@@ -1,0 +1,4 @@
+
+TWELVE_API_KEY=your_twelvedata_key
+JWT_SECRET=some_random_secret
+DATABASE_URL=postgres://user:pass@host:port/dbname

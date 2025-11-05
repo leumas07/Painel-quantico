@@ -1,0 +1,19 @@
+
+services:
+  - type: web
+    name: painel-backend
+    env: node
+    repo: <replace-with-your-github-repo>
+    branch: main
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && node index.js
+
+  - type: web
+    name: painel-frontend
+    env: node
+    repo: <replace-with-your-github-repo>
+    branch: main
+    plan: free
+    buildCommand: cd web && npm install && npm run build
+    startCommand: cd web && npm run preview
