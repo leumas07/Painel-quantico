@@ -55,5 +55,8 @@ io.on('connection', socket => {
   tick();
   socket.on('disconnect', ()=> clearInterval(id));
 });
+app.get('/', (req, res) => {
+  res.send('✅ API ONLINE');
+});
 
 server.listen(PORT, ()=> console.log('Server on', PORT));
